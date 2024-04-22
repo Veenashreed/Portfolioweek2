@@ -1,0 +1,36 @@
+Design a class called “Song” with attributes title ,artist and duration.
+Write methods to display the songs details
+Create an object of this class using parameterised constructor and access to display the songs details
+
+public class Song {
+    private String title;
+    private String artist;
+    private double duration;
+
+    // Parameterized constructor
+    public Song(String title, String artist, double duration) {
+        this.title = title;
+        this.artist = artist;
+        this.duration = duration;
+    }
+
+    // Method to display the song's details
+    public void displayDetails() {
+        System.out.println("Title: " + title);
+        System.out.println("Artist: " + artist);
+        System.out.println("Duration: " + duration + " minutes");
+    }
+
+    public static void main(String[] args) {
+        // Creating an object of the Song class using parameterized constructor
+        Song mySong = new Song("Shape of You", "Ed Sheeran", 3.54);
+        
+        // Accessing the method to display the song's details
+        mySong.displayDetails();
+    }
+}
+
+Output:
+Title: Shape of You
+Artist: Ed Sheeran
+Duration: 3.54 minutes
